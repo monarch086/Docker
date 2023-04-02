@@ -1,0 +1,21 @@
+version: "3.9"
+
+services:
+  backend:
+    image: image-name
+    depends_on:
+    - db-server
+    ports:
+    - "5011:5011"
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings__Postgres: "Host=db-server; user id=docker; password=docker; database=docker"
+  db-server:
+    image: postgres
+    restart: always
+    container_name: pg_dc_test
+    ports:
+      - 49200:5432
+    environment:
+      POSTGRES_USER: docker
+      POSTGRES_PASSWORD: docker
