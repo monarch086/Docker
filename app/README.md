@@ -1,5 +1,10 @@
 # Simple Express.js server
 
+## Info
+
+- [https://expressjs.com](https://expressjs.com/ru/)
+- [MDN: Веб-фреймворк Express](https://developer.mozilla.org/ru/docs/Learn/Server-side/Express_Nodejs)
+
 ## Commands
 
 ### curl
